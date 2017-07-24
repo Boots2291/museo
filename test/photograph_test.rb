@@ -46,13 +46,19 @@ class PhotographTest < Minitest::Test
 
     assert_equal 4, photograph.artist_id
   end
+
+  def test_it_has_a_museum_id
+    photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)",
+                                 artist_id: 4,
+                                 museum_id: 2,
+                                 year: 1954})
+
+    assert_equal 2, photograph.museum_id
+  end
 end
 
 # > photograph.id
 # # => 1
-#
-# > photograph.artist_id
-# # => 4
 #
 # > photograph.museum_id
 # # => 2
