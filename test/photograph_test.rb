@@ -10,7 +10,7 @@ class PhotographTest < Minitest::Test
                                  museum_id: 2,
                                  year: 1954})
 
-    assert_instance_of photograph, Photograph
+    assert_instance_of Photograph, photograph
   end
 
 end
