@@ -21,12 +21,15 @@ class CuratorTest < Minitest::Test
 
     assert_equal [], curator.museums
   end
+
+  def test_it_holds_empty_array_of_photographs
+    curator = Curator.new
+
+    assert_equal [], curator.photographs
+  end
 end
 
 
-# > curator.museums
-# # => []
-#
 # > curator.photographs
 # # => []
 #
