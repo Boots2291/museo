@@ -15,14 +15,15 @@ class CuratorTest < Minitest::Test
 
     assert_equal [], curator.artists
   end
+
+  def test_it_holds_empty_array_of_museums
+    curator = Curator.new
+
+    assert_equal [], curator.museums
+  end
 end
 
-# > curator = Curator.new
-# # => #<Curator:0x007f98aa0617e8 ...>
-#
-# > curator.artists
-# # => []
-#
+
 # > curator.museums
 # # => []
 #
