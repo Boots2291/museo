@@ -70,9 +70,14 @@ class PhotographTest < Minitest::Test
 
     assert_equal target, photograph.name
   end
+
+  def test_it_has_a_year
+    photograph = Photograph.new({id: 1,
+                                 name: "Rue Mouffetard, Paris (Boy with Bottles)",
+                                 artist_id: 4,
+                                 museum_id: 2,
+                                 year: 1954})
+
+    assert_equal 1954, photograph.year
+  end
 end
-# > photograph.name
-# # => "Rue Moffetard, Paris (Boy with Bottles)"
-#
-# > photograph.year
-# # => 1954
