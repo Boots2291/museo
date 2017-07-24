@@ -14,8 +14,8 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_an_id
-    skip
-    photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)",
+    photograph = Photograph.new({id: 1,
+                                 name: "Rue Mouffetard, Paris (Boy with Bottles)",
                                  artist_id: 4,
                                  museum_id: 2,
                                  year: 1954})
@@ -24,12 +24,13 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_can_assign_two_ids
-    skip
-    photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)",
+    photograph = Photograph.new({id: 1,
+                                 name: "Rue Mouffetard, Paris (Boy with Bottles)",
                                  artist_id: 4,
                                  museum_id: 2,
                                  year: 1954})
-    photograph_2 = Photograph.new({name: "Rue Second, Nice",
+    photograph_2 = Photograph.new({id: 2,
+                                 name: "Rue Second, Nice",
                                  artist_id: 2,
                                  museum_id: 5,
                                  year: 1963})
@@ -39,7 +40,8 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_artist_id
-    photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)",
+    photograph = Photograph.new({id: 1,
+                                 name: "Rue Mouffetard, Paris (Boy with Bottles)",
                                  artist_id: 4,
                                  museum_id: 2,
                                  year: 1954})
@@ -48,7 +50,8 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_a_museum_id
-    photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)",
+    photograph = Photograph.new({id: 1,
+                                 name: "Rue Mouffetard, Paris (Boy with Bottles)",
                                  artist_id: 4,
                                  museum_id: 2,
                                  year: 1954})
